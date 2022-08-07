@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="Neovim client library and GUI, in Qt5"
 HOMEPAGE="https://github.com/equalsraf/neovim-qt"
@@ -32,5 +32,5 @@ src_configure() {
 		-DENABLE_TESTS=OFF
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
